@@ -61,16 +61,15 @@ h1 {
 }
 
 .input-group label {
-    position: absolute;
-    top: -8px;
-    left: 12px;
-    background: #fff;
-    padding: 0 4px;
-    font-size: 12px;
-    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    position: static; /* 🔥 quan trọng */
 }
 
 .input-group input {
+    order: 1;
     width: 100%;
     padding: 14px 16px;
     border: 1px solid #ddd;
@@ -230,7 +229,7 @@ h1 {
 
 .carousel img {
     width: 100%;
-    height: 400px;
+    height: 550px;
     object-fit: cover;
     object-position: center bottom;
     border-radius: 16px;
