@@ -17,3 +17,5 @@ Route::prefix('auth')->group(function () {
     Route::get('forgot', [ForgotController::class, 'index'])->name('forgot');
     Route::post('forgot', [ForgotController::class, 'forgot'])->name('forgot.submit');
 });
+
+Route::prefix()->group(function () {});
