@@ -18,4 +18,8 @@ Route::prefix('auth')->group(function () {
     Route::post('forgot', [ForgotController::class, 'forgot'])->name('forgot.submit');
 });
 
-Route::prefix()->group(function () {});
+Route::prefix('client')->group(function () {
+    Route::get('/', function () {
+        return view('client.home');
+    })->name('home');
+});
